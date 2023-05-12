@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  overflow-y: hidden;
+}
+
+.logo h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.plus-icon {
+  margin-top: -54px;
+  margin-left: 1470px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.plus-icon:before,
+.plus-icon:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.plus-icon:before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.plus-icon:after {
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.main__content {
+  margin-top: 110px;
+  font-weight: 300;
+  font-size: 70px;
+}
+.main__content a {
+  font-size: 10px;
+  font-weight: 500;
+  background: rgb(226, 223, 223);
+  padding: 7px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
